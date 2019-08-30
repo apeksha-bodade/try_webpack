@@ -1,0 +1,332 @@
+html, body{
+    height:100%;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.content {
+    background: black;
+    height: 75%;
+    /*display: flex;*/
+    /*align-items: flex-end;*/
+    /*justify-content: space-between;*/
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.task {
+    display: inline-block;
+    width: 60%;
+    height: 20px;
+}
+
+.li_element {
+    padding: 10px;
+    height: 80px;
+    /*margin: 10px;*/
+    background-color: steelBlue;
+    overflow: hidden;
+    width: 250px;
+    text-align: left;
+    display: inline-block;
+    /*vertical-align: middle;*/
+    /*border-style: groove;*/
+    border: 5px solid black;
+    /*white-space: nowrap;*/
+}
+
+.flex-container
+.flex-container .li_element:nth-child(odd) { background-color: steelBlue; }
+/*.flex-container .li_element:nth-child(odd):hover { background-color: #2e678b; }*/
+.flex-container .li_element:nth-child(even) { background-color: orchid; }
+/*.flex-container .li_element:nth-child(even):hover { background-color: DarkOrchid;}*/
+
+button {
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+#aboutApp {
+    position: absolute;
+    right: 10px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    background-color: #008080;
+    width: 8% !important;
+}
+.button1 {
+    border: 5px;
+    width: 25%;
+}
+
+/*.markImp {*/
+/*    display: inline !important;*/
+/*    width: 10% !important;*/
+/*    height: 20px !important;*/
+/*    !*margin: 0;*!*/
+/*    border: none;*/
+/*    border-radius: 0;*/
+/*    !*width: %;*!*/
+/*    !*padding: padding10px;*!*/
+/*    !*text-align: center;*!*/
+/*    !*float: left;*!*/
+/*    !*font-size: 16px;*!*/
+/*}*/
+
+.demo_class {
+    background-color: black;
+    /*height: 500px;*/
+    height: 75%;
+    border: 10px;
+    padding-right: 10px;
+    overflow: scroll;
+    display:flex;
+    align-self: flex-start;
+    margin: 12px;
+    /*background-color:#000;*/
+}
+.li_element .task {
+    white-space: nowrap;
+    vertical-align: middle;
+    /*transform: translateX(0%);*/
+    /*transition: 30s;*/
+
+}
+/*.li_element:hover .task {*/
+/*    overflow: visible;*/
+/*    transform: translateX(calc(-700px));*/
+/*}*/
+span {
+    position: relative;
+    height: 40px;
+    border: 3px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+    /*overflow: scroll;*/
+    /*text-overflow: ellipsis;*/
+    overflow-x: auto;
+    /*cursor: pointer;*/
+}
+
+span::-webkit-scrollbar {
+    display: none;
+}
+
+.input {
+    height: 30px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+    /*float: left;*/
+    font-size: 16px;
+}
+
+.markImp {
+    /*position: fixed;*/
+    /*z-index:99999 !important;*/
+    display: inline !important;
+    width: 10% !important;
+    height: 20px !important;
+    /*margin: 0;*/
+    border: none;
+    border-radius: 0;
+
+    /*width: %;*/
+    /*padding: padding10px;*/
+    /*text-align: center;*/
+    /*float: left;*/
+    /*font-size: 16px;*/
+}
+
+.markAsImp:hover {
+    z-index:99999 !important;
+    cursor: pointer;
+}
+.close {
+    /*display: inline-block;*/
+    /*alignment: right;*/
+    /*position: absolute;*/
+    float: right;
+    width: 15%;
+}
+.closeAbt {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    background-color: #007B50;
+}
+
+.todo_outer {
+    background-color: teal;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    height: 100%;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    /*background-color: #FFFFFF;*/
+    width: 100%;
+    display:flex;
+    align-self: flex-start;
+    flex-flow: row wrap;
+    /*padding: 2px;*/
+}
+
+/*.Imp {*/
+/*    checked: checked;*/
+/*}*/
+
+/* Style the topnav links */
+.topnav a {
+    width: 32%;
+    /*  display: flex;
+      flex-flow: row wrap;*/
+    /*display: block;*/
+    border: 10px #4CAF50;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    /*padding: 2px;*/
+    margin: 5px;
+    text-decoration: none;
+    background-color: #333;
+}
+/*.active {*/
+/*    background-color: #aaaabb;*/
+/*    color: #000000 !important;*/
+/*}*/
+
+.topnav a:hover {
+    background-color: #aaaaaa;
+    color: #000 !important;
+}
+
+.toHighlight {
+    background-color: #bbbbbb !important;
+    color: #000 !important;
+}
+
+.modal {
+    font-size: 20px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+}
+.modal-content {
+    border: 15px solid grey;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    /*border: 1px solid #888;*/
+    width: 70%;
+    height: 80%;
+    overflow: scroll;
+}
+
+/*.topnav a:active {*/
+/*  background-color: yellow;*/
+/*}*/
+/*.active, .topnav a:hover {*/
+/*  background-color: yellow;*/
+/*}*/
+/* Change color on hover */
+
+
+/*.heading {
+    color: white;
+    align: center;
+    display: block;
+    width: 100%;
+  }*/
+
+@media screen and (max-width: 1024px) {
+    .topnav a {
+        width: 100%;
+        height: 33.33%;
+    }
+
+    .topnav {
+        width: 20%;
+        display: flex;
+        flex-flow: column wrap;
+        /*height: 100%;*/
+        vertical-align: top;
+
+    }
+
+    .demo_class {
+        background-color: black;
+        border: 10px;
+        padding-right: 10px;
+        overflow: scroll;
+        display: inline-block;
+        width: 70%  ;
+        height: 500px;
+    }
+
+    /*input {
+      width: 100%;
+    }
+  */
+    .content {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+    }
+
+}
+
+.check_todo, .check_inprogress, .check_done {
+    /*position: absolute;*/
+    display:inline;
+    width:30%;
+    cursor: pointer;
+    /*float: left;*/
+}
+.check_done:checked {
+    color: #4CAF50;
+}
+.check_inprogress:checked {
+    color: #4CAF50;
+}
+.check_todo:checked {
+    color: #4CAF50;
+}
+.span_key {
+    display: none;
+}
